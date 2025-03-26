@@ -1,6 +1,10 @@
 from setuptools import find_packages, setup
 
+<<<<<<< HEAD
 package_name = 'prueba2_py'
+=======
+package_name = 'prueba_py'
+>>>>>>> 337fcb21265e2fd43ce492e0a672553bd23c683a
 
 setup(
     name=package_name,
@@ -20,8 +24,13 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+<<<<<<< HEAD
             'service = prueba2_py.service_member_function:main',
             'client = prueba2_py.client_member_function:main',
+=======
+                'talker = prueba_py.publisher_member_function:main',
+                'listener = prueba_py.subscriber_member_function:main',
+>>>>>>> 337fcb21265e2fd43ce492e0a672553bd23c683a
         ],
     },
 )
